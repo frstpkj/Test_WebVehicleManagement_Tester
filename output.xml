@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on darwin)" generated="2024-02-04T23:36:51.806281" rpa="false" schemaversion="5">
+<suite id="s1" name="testScript" source="/Users/supakijbuasod/Desktop/Haup_Tets_Promote/Tester/testScript.robot">
+<test id="s1-t1" name="AccessAllPage" line="6">
+<kw name="AccessTheLangingPage" owner="action">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-02-04T23:36:51.883616" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<arg>${url_Home}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T23:36:51.883504" elapsed="1.512231"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${expected_result_Home}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:36:53.395988" elapsed="0.071125"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:36:51.883168" elapsed="1.584085"/>
+</kw>
+<kw name="AccessTheListPage" owner="action">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-02-04T23:36:53.467777" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/view'.</msg>
+<arg>${url_View}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T23:36:53.467655" elapsed="1.296212"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${expected_result_View}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:36:54.764147" elapsed="0.036009"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:36:53.467478" elapsed="1.332776"/>
+</kw>
+<kw name="AccessTheAddPage" owner="action">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-02-04T23:36:54.800733" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/add'.</msg>
+<arg>${url_Add}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T23:36:54.800616" elapsed="1.324680"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${expected_result_Add}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:36:56.125561" elapsed="0.035859"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:36:54.800438" elapsed="1.361082"/>
+</kw>
+<kw name="AccessTheEditPage" owner="action">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-02-04T23:36:56.162023" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/edit'.</msg>
+<arg>${url_Edit}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T23:36:56.161893" elapsed="1.347908"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${expected_result_Edit}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:36:57.510071" elapsed="0.036308"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:36:56.161706" elapsed="1.384763"/>
+</kw>
+<kw name="AccessTheDeletePage" owner="action">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-02-04T23:36:57.547017" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/delete'.</msg>
+<arg>${url_Delete}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T23:36:57.546859" elapsed="1.407065"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${expected_result_Delete}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:36:58.954217" elapsed="0.037845"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:36:57.546677" elapsed="1.445486"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:36:51.882955" elapsed="7.109372"/>
+</test>
+<test id="s1-t2" name="AddVehicleData" line="12">
+<kw name="AccessTheAddPage" owner="action">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-02-04T23:36:58.992948" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/add'.</msg>
+<arg>${url_Add}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T23:36:58.992830" elapsed="1.419039"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${expected_result_Add}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:00.412256" elapsed="0.036720"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:36:58.992692" elapsed="1.456384"/>
+</kw>
+<kw name="AddVehicleData" owner="action">
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:00.449771" level="INFO">Typing text 'AB-1234' into text field 'id=licensePlate'.</msg>
+<arg>id=licensePlate</arg>
+<arg>${Add_vehicle_License}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T23:37:00.449453" elapsed="0.184197"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:00.633942" level="INFO">Typing text 'Haupcar' into text field 'id=vehicleBrand'.</msg>
+<arg>id=vehicleBrand</arg>
+<arg>${Add_vehicle_Brand}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T23:37:00.633772" elapsed="0.062313"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:00.696335" level="INFO">Typing text 'ModelA' into text field 'id=vehicleModel'.</msg>
+<arg>id=vehicleModel</arg>
+<arg>${Add_vehicle_Model}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T23:37:00.696197" elapsed="0.039449"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:00.735894" level="INFO">Typing text 'Testing Robot' into text field 'id=note'.</msg>
+<arg>id=note</arg>
+<arg>${Add_vehicle_Note}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T23:37:00.735748" elapsed="0.046949"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:00.782934" level="INFO">Typing text 'Using Selenium2Library' into text field 'id=etc'.</msg>
+<arg>id=etc</arg>
+<arg>${Add_vehicle_Etc}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T23:37:00.782806" elapsed="0.047321"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:37:00.449289" elapsed="0.380904"/>
+</kw>
+<kw name="SubmitAddVehicle" owner="action">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:00.830578" level="INFO">Clicking element '//*[contains(text(),'Add Vehicle')]'.</msg>
+<arg>${click_element_Add}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T23:37:00.830478" elapsed="0.024435"/>
+</kw>
+<kw name="Alert Should Be Present" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:00.855123" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="PASS" start="2024-02-04T23:37:00.855044" elapsed="1.022096"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:37:00.830338" elapsed="1.046997"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:36:58.992488" elapsed="2.885292"/>
+</test>
+<test id="s1-t3" name="CheckAddData" line="16">
+<kw name="AccessTheListPage" owner="action">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:01.880028" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/view'.</msg>
+<arg>${url_View}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T23:37:01.879662" elapsed="1.419621"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${expected_result_View}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:03.299674" elapsed="0.038078"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:37:01.879085" elapsed="1.458772"/>
+</kw>
+<kw name="FindAddData" owner="action">
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${Add_vehicle_License}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:03.338215" elapsed="0.487037"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${Add_vehicle_Brand}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:03.825408" elapsed="0.010916"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${Add_vehicle_Model}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:03.836622" elapsed="0.009233"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${Add_vehicle_Note}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:03.845982" elapsed="0.007675"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${Add_vehicle_Etc}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:03.853780" elapsed="0.007654"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:37:03.338051" elapsed="0.523457"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:37:01.878424" elapsed="1.983298"/>
+</test>
+<test id="s1-t4" name="EditVehicleData" line="19">
+<kw name="AccessTheEditPage" owner="action">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:03.862538" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/edit'.</msg>
+<arg>${url_Edit}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T23:37:03.862251" elapsed="1.382023"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${expected_result_Edit}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:05.244596" elapsed="0.036634"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:37:03.862090" elapsed="1.419232"/>
+</kw>
+<kw name="FindAddData" owner="action">
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${Add_vehicle_License}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:05.281683" elapsed="0.481895"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${Add_vehicle_Brand}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:05.763719" elapsed="0.007521"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${Add_vehicle_Model}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:05.771342" elapsed="0.006967"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${Add_vehicle_Note}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:05.778412" elapsed="0.006364"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${Add_vehicle_Etc}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:05.784866" elapsed="0.006224"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:37:05.281520" elapsed="0.509638"/>
+</kw>
+<kw name="ClickEditAtVehicle" owner="action">
+<kw name="Click Link" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:05.791560" level="INFO">Clicking link 'xpath=//a[@href="/edit/AB-1234"]'.</msg>
+<arg>${click_link_Edit}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T23:37:05.791433" elapsed="0.435687"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:37:05.791287" elapsed="0.435905"/>
+</kw>
+<kw name="EditVehicleData" owner="action">
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${expected_result_Edit2}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:06.227723" elapsed="0.454606"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:06.682600" level="INFO">Typing text '_EDITED' into text field 'id=licensePlate'.</msg>
+<arg>id=licensePlate</arg>
+<arg>${Add_EDITED_Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T23:37:06.682450" elapsed="0.115236"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:06.798086" level="INFO">Typing text '_EDITED' into text field 'id=vehicleBrand'.</msg>
+<arg>id=vehicleBrand</arg>
+<arg>${Add_EDITED_Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T23:37:06.797891" elapsed="0.046029"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:06.844205" level="INFO">Typing text '_EDITED' into text field 'id=vehicleModel'.</msg>
+<arg>id=vehicleModel</arg>
+<arg>${Add_EDITED_Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T23:37:06.844048" elapsed="0.041738"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:06.886016" level="INFO">Typing text '_EDITED' into text field 'id=note'.</msg>
+<arg>id=note</arg>
+<arg>${Add_EDITED_Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T23:37:06.885888" elapsed="0.041377"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:06.927511" level="INFO">Typing text '_EDITED' into text field 'id=etc'.</msg>
+<arg>id=etc</arg>
+<arg>${Add_EDITED_Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T23:37:06.927377" elapsed="0.046918"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:37:06.227536" elapsed="0.746832"/>
+</kw>
+<kw name="SubmitEditVehicle" owner="action">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:06.974822" level="INFO">Clicking element '//*[contains(text(),'Edit Vehicle')]'.</msg>
+<arg>${click_element_Edit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T23:37:06.974684" elapsed="0.020645"/>
+</kw>
+<kw name="Alert Should Be Present" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:06.995526" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="PASS" start="2024-02-04T23:37:06.995444" elapsed="0.503899"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:37:06.974509" elapsed="0.525069"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:37:03.861879" elapsed="3.637951"/>
+</test>
+<test id="s1-t5" name="DeleteVehicleData" line="25">
+<kw name="AccessTheDeletePage" owner="action">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:07.500897" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/delete'.</msg>
+<arg>${url_Delete}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-04T23:37:07.500725" elapsed="1.599322"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${expected_result_Delete}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:09.100375" elapsed="0.037686"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:37:07.500509" elapsed="1.637934"/>
+</kw>
+<kw name="FindEditData" owner="action">
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${Add_vehicle_License_Edit}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:09.138810" elapsed="0.479100"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${Add_vehicle_Brand_Edit}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:09.618037" elapsed="0.007197"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${Add_vehicle_Model_Edit}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:09.625348" elapsed="0.006164"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${Add_vehicle_Note_Edit}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:09.631616" elapsed="0.006202"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${Add_vehicle_Etc_Edit}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:09.637919" elapsed="0.006007"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:37:09.138651" elapsed="0.505339"/>
+</kw>
+<kw name="ClickDeleteAtVehicle" owner="action">
+<kw name="Click Link" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:09.644361" level="INFO">Clicking link 'xpath=//a[@href="/delete/AB-1234_EDITED"]'.</msg>
+<arg>${click_link_Delete}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T23:37:09.644242" elapsed="0.479828"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:37:09.644114" elapsed="0.480048"/>
+</kw>
+<kw name="DeleteVehicleData" owner="action">
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>${expected_result_Delete2}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T23:37:10.124599" elapsed="0.462818"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:10.587662" level="INFO">Clicking element '//*[contains(text(),'Delete this Vehicle?')]'.</msg>
+<arg>${click_element_Delete}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T23:37:10.587528" elapsed="0.022192"/>
+</kw>
+<kw name="Alert Should Be Present" owner="Selenium2Library">
+<msg time="2024-02-04T23:37:10.609928" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="PASS" start="2024-02-04T23:37:10.609839" elapsed="0.508277"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:37:10.124384" elapsed="0.993813"/>
+</kw>
+<status status="PASS" start="2024-02-04T23:37:07.500186" elapsed="3.618162"/>
+</test>
+<status status="PASS" start="2024-02-04T23:36:51.806828" elapsed="19.312070"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="testScript">testScript</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
